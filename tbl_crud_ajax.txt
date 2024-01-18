@@ -1,0 +1,10 @@
+CREATE TABLE `ajax_crud`.`tbl_crud_ajax` (
+  `id` INT NOT NULL AUTO_INCREMENT , 
+  `name` VARCHAR(255) NOT NULL , 
+  `email` VARCHAR(255) NOT NULL , 
+  `phone` INT NOT NULL , PRIMARY KEY (`id`)
+) ENGINE = InnoDB;
+
+
+change table name and attributes
+ALTER TABLE `tbl_crud_ajax` CHANGE `email` `comment` TEXT CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
